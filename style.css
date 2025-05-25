@@ -553,35 +553,41 @@ input[type="text"]:focus-visible,
 /* --- Responsive Adjustments --- */
 @media (max-width: 1024px) {
   .product-wrapper { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); padding: 15px; gap: 15px; }
-  :root { --sidebar-width: 220px; }
+  :root { --sidebar-width: 220px; } /* Sidebar is narrower when expanded on tablet-sized screens */
 }
+
 @media (max-width: 960px) {
   .product-wrapper { grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); }
 }
+
 @media (max-width: 768px) {
-  .sidebar { width: var(--sidebar-width-collapsed); }
   .sidebar.collapsed .sidebar-search-input-wrapper { display: none; }
   .sidebar.collapsed .sidebar-search-trigger { width: 100%; justify-content: center; }
-  .sidebar:not(.collapsed) .sidebar-search-container { flex-direction: row; }
-  .main-content-wrapper { margin-left: var(--sidebar-width-collapsed); width: calc(100% - var(--sidebar-width-collapsed)); }
+  .sidebar:not(.collapsed) .sidebar-search-container {
+    flex-direction: row; 
+  }
+
   .product-wrapper { grid-template-columns: 1fr; padding: 10px; gap: 10px; }
   main.main-content { padding: 10px; }
   .page-section-heading { font-size: 1.8em; }
   footer { padding: 20px 10px; }
 }
+
 @media (max-width: 480px) {
-  .site-title { display: none; }
-  /* .top-bar { justify-content: space-between; } /* Top-bar removed */
-  /* .top-bar .menu-toggle { margin-right: 0; } /* Menu-toggle moved */
-  /* .top-bar-controls { margin-left: auto; } /* Top-bar controls content moved/gone */
-  .box-content h3 { font-size: 1.1em; } .box-content p { font-size: 0.9rem; }
-  .box-links { flex-direction: row; flex-wrap: wrap; }
+
+  .box-content h3 { font-size: 1.1em; }
+  .box-content p { font-size: 0.9rem; }
+  .box-links { flex-direction: row; flex-wrap: wrap; } 
   .box-link { font-size: 0.75rem; min-width: 50px; max-width: 70px; }
   .link-icon { width: 20px; height: 20px; }
-  .dropdown { width: auto; }
-  .sidebar:not(.collapsed) .sidebar-search-container { padding: 2px; }
-  .sidebar:not(.collapsed) .sidebar-search-input-field { font-size: 0.8em; padding: 6px 8px; }
-  #autocompleteResults.autocomplete-items { top: 68px; left: 5px; right: 5px; }
+  .dropdown { width: auto; } 
+  .sidebar:not(.collapsed) .sidebar-search-container {
+    padding: 2px; 
+  }
+  .sidebar:not(.collapsed) .sidebar-search-input-field {
+    font-size: 0.8em;
+    padding: 6px 8px;
+  }
 }
 
 /* --- Modal Styles --- */
