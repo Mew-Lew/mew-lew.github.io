@@ -1,4 +1,4 @@
-// main.js - Final Cleaned Version with Revised Card Heights and Dropdown Overflow Fix
+// main.js 
 
 // --- GLOBAL UTILITY FUNCTIONS ---
 function debounce(func, wait) {
@@ -106,12 +106,13 @@ function equalizeInitialCardHeights() {
 
     cards.forEach(card => {
         if (!card.classList.contains('expanded') && !card.classList.contains('expanded-dropdown')) {
-            card.style.height = 'auto';
-            card.style.minHeight = '';
+            card.style.height = 'auto'; 
+            card.style.minHeight = ''; 
             card.style.maxHeight = '';
+
             const mainTopContent = card.querySelector('.main-card-top-content');
             if (mainTopContent) {
-                mainTopContent.style.height = 'auto';
+                mainTopContent.style.height = 'auto'; 
             }
         }
     });
@@ -354,14 +355,30 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
 
+        // Card Height Equalization - Initial calls
         if (document.readyState === "complete" || document.readyState === "interactive") {
             equalizeInitialCardHeights();
         } else {
             window.addEventListener('load', equalizeInitialCardHeights);
         }
-        window.addEventListener('resize', debounce(equalizeInitialCardHeights, 250));
+
+        // MODIFIED Resize Listener for Card Height Equalization
+        let resizeTimeoutForCards;
+        let lastKnownWidth = window.innerWidth; 
+
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimeoutForCards); 
+            resizeTimeoutForCards = setTimeout(() => {
+                const currentWidth = window.innerWidth;
+                if (currentWidth > 1024 || currentWidth !== lastKnownWidth) {
+                    equalizeInitialCardHeights();
+                    lastKnownWidth = currentWidth; 
+                }
+            }, 250); 
+        });
     }
 
+    // Modal Event Listeners
     if (contributorModalOverlay) {
         contributorModalOverlay.addEventListener('click', closeContributorModal);
     } else {
@@ -397,10 +414,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // MODIFIED Global Click Listener (relevant part for dropdowns)
+    // Global Click Listener
     document.addEventListener('click', (event) => {
         const target = event.target;
-
         const sidebarSearchTrigger = document.querySelector('.sidebar-search-trigger');
         if (sidebar && menuToggleButton && !sidebar.classList.contains('collapsed') &&
             !sidebar.contains(target) &&
@@ -439,7 +455,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         dropdownDiv.classList.remove('show');
                         const box = dropdownDiv.closest('.box-container');
                         if (box) {
-                            box.classList.remove('dropdown-active-overflow'); // Remove overflow class
+                            box.classList.remove('dropdown-active-overflow');
                         }
                     }
                 }
