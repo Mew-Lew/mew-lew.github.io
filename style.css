@@ -358,25 +358,103 @@ html.light-theme .markdown-body tr:nth-child(even) { background-color: var(--bg-
 }
 .box-content h3 { margin: 0 0 8px; font-size: 1.25em; color: var(--text-primary); }
 .box-content p { margin: 0 0 12px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary); }
+/* --- Styles for Box Content & Links --- */
+.box-content h3 { margin: 0 0 8px; font-size: 1.25em; color: var(--text-primary); }
+.box-content p { margin: 0 0 12px; font-size: 0.95rem; line-height: 1.5; color: var(--text-secondary); }
+
 .box-links {
-    display: flex; justify-content: space-around; align-items: flex-start;
-    flex-wrap: nowrap; width: 100%; margin-top: auto; padding-top: 10px;
-    flex-shrink: 0; gap: 8px; box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-top: auto;
+    padding-top: 10px;
+    flex-shrink: 0;
+    gap: 8px;
+    box-sizing: border-box;
 }
-.box-link {
-    color: var(--text-primary); text-decoration: none; display: flex; flex-direction: column;
-    align-items: center; gap: 3px; font-size: 0.8rem; font-weight: 500; cursor: pointer;
-    background: none; border: none; padding: 4px 2px; text-align: center;
-    min-width: 55px; flex: 1; max-width: 75px;
+
+.box-link,
+.box-links .dropdown {
+    color: var(--text-primary);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px 2px;
+    text-align: center;
+    min-width: 55px;
+    flex: 1;
+    max-width: 75px;
     transition: color 0.2s ease, transform 0.1s ease;
-    font-family: inherit; line-height: inherit; text-transform: none;
-    -webkit-appearance: none; -moz-appearance: none; appearance: none; margin: 0;
+    font-family: inherit;
+    line-height: inherit;
+    text-transform: none;
+    -webkit-appearance: none; -moz-appearance: none; appearance: none;
+    margin: 0;
+    position: relative;
 }
-.box-link:hover { color: var(--xbox-green-light); transform: translateY(-1px); }
-.link-icon { width: 22px; height: 22px; margin-bottom: 2px; }
+
+.box-link:hover {
+    color: var(--xbox-green-light);
+    transform: translateY(-1px);
+}
+
+.link-icon {
+    width: 22px;
+    height: 22px;
+    margin-bottom: 2px;
+}
+
 .box-link.info-toggle-active {
-    color: var(--xbox-green-light); box-shadow: 0 0 8px rgba(var(--xbox-green-rgb), 0.5);
+    color: var(--xbox-green-light);
+    box-shadow: 0 0 8px rgba(var(--xbox-green-rgb), 0.5);
     border-radius: var(--border-radius-small);
+}
+
+/* --- Dropdown Button Arrow Overlay specific styles --- */
+.box-links .dropdown {
+    position: relative;
+    display: flex; 
+    justify-content: center;
+}
+
+.box-links .dropdown .download-btn {
+    width: 100%;
+}
+
+.box-links .download-btn .download-text-content {
+    display: inline-block; 
+    position: relative;   
+    padding-right: 14px;  
+    line-height: 1.3;      
+}
+
+.box-links .download-btn .download-text-content .arrow {
+    position: absolute;
+    right: 0px;            
+    top: 50%;              
+    transform: translateY(-50%);
+    font-size: 0.8em;      
+    line-height: 1;        
+    pointer-events: none;  
+    color: inherit;        
+}
+
+.dropdown-menu {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 120px;
+    z-index: 200;
 }
 html.light-theme .box-link.info-toggle .link-icon { filter: invert(100%); }
 html.light-theme .box-link.info-toggle.info-toggle-active .link-icon { filter: invert(100%); }
@@ -704,5 +782,3 @@ html.light-theme .contributor-link-icon[src="images/github-logo.svg"] {
     font-weight: 500;
     line-height: 1.3;
 }
-
-
