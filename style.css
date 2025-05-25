@@ -451,7 +451,7 @@ html.light-theme .markdown-body tr:nth-child(even) { background-color: var(--bg-
 .dropdown-menu {
     position: absolute;
     bottom: 100%;
-    left: 50%;
+    left: 0;
     transform: translateX(-50%);
     min-width: 120px;
     z-index: 200;
