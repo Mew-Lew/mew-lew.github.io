@@ -343,6 +343,9 @@ html.light-theme .markdown-body tr:nth-child(even) { background-color: var(--bg-
   transition: max-height 0.35s ease-in-out, border-bottom-left-radius 0.1s linear,
               border-bottom-right-radius 0.1s linear, background-color 0.3s ease, border-color 0.3s ease;
 }
+.box-container.dropdown-active-overflow {
+    overflow: visible;
+}
 .box-container.expanded { max-height: 1200px !important; min-height: 0 !important; height: auto !important; }
 .box-container.expanded-dropdown { max-height: 600px; }
 .box-image-wrapper {
@@ -379,7 +382,7 @@ html.light-theme .box-link.info-toggle .link-icon { filter: invert(100%); }
 html.light-theme .box-link.info-toggle.info-toggle-active .link-icon { filter: invert(100%); }
 html:not(.light-theme) .box-link.info-toggle.info-toggle-active .link-icon { filter: brightness(0) invert(1); }
 
-.dropdown { position: relative; display: inline-block; z-index: 100; }
+.dropdown { position: relative; display: inline-block; z-index: 150; }
 .arrow { font-size: 0.4rem; margin-left: -4px; align-self: flex-end; transform: translateY(-0.4em); }
 .dropdown-menu {
   display: none; position: absolute; bottom: 100%; left: 0; box-sizing: border-box; min-width: 100%;
@@ -647,9 +650,6 @@ input[type="text"]:focus-visible,
 }
 .modal-close-button:hover {
     color: var(--text-primary);
-}
-.modal-body {
-    /* No specific styles needed unless content requires it */
 }
 .contributor-link-icon {
     width: 24px;
