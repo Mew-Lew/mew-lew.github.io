@@ -1961,16 +1961,16 @@ a.contributor-link-item:focus-visible {
   .features-section { 
     padding-top: 30px; 
     padding-bottom: 30px;
-    padding-left: 15px;  /* Added side padding */
-    padding-right: 15px; /* Added side padding */
+    padding-left: 15px;
+    padding-right: 15px;
     margin-top: 30px;
   }
-  .getting-started-section { /* This section may need specific adjustment if it's meant to be full-bleed */
+  .getting-started-section {
     border-radius: 0;
-    /* If it uses negative margins to be full-bleed, ensure its internal content has padding */
-    /* margin-left: -15px; */ /* Keep if full-bleed is intended */
-    /* margin-right: -15px; */ /* Keep if full-bleed is intended */
-    /* padding-left: 15px; */ /* This would counteract negative margin for content alignment */
+    /* Keep or adjust these if they are part of a full-bleed design for this specific section */
+    /* margin-left: -15px; */ 
+    /* margin-right: -15px; */
+    /* padding-left: 15px; */ 
     /* padding-right: 15px; */
   }
   .features-section {
@@ -1983,18 +1983,25 @@ a.contributor-link-item:focus-visible {
   .carousel-button.prev { left: 10px; } 
   .carousel-button.next { right: 10px; } 
 
+  .carousel-slide .slide-caption {
+    padding: 6px 8px; 
+    font-size: 0.8em; 
+    line-height: 1.2;
+    background-color: rgba(0, 0, 0, 0.7); /* Slightly less opaque if needed */
+  }
   .carousel-dots {
-    position: absolute;    /* Ensure absolute positioning */
-    bottom: 5px;           /* Position closer to the bottom */
+    position: absolute;
+    bottom: 3px;      /* Move closer to the bottom edge */
     left: 0;
     right: 0;
-    z-index: 15;           /* Ensure it's above images, adjust if needed relative to caption */
-    padding-top: 5px;      /* Reduced top padding */
-    padding-bottom: 5px;   /* Added some bottom padding for balance */
+    z-index: 15;      /* Ensure it's above caption if they could overlap */
+    padding-top: 4px;   /* Minimal padding */
+    padding-bottom: 4px;
   }
-  .carousel-slide .slide-caption {
-    padding: 8px 10px;     /* Reduced padding to make it shorter */
-    font-size: 0.85em;     /* Smaller font size */
+  .carousel-dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 4px;
   }
 
   .category-grid {
@@ -2028,6 +2035,13 @@ a.contributor-link-item:focus-visible {
     padding: 10px;
     gap: 10px;
   }
+  .box-container { /* Allow cards to adjust height more freely */
+    min-height: 0; 
+  }
+  .main-card-top-content { /* Ensure this inner wrapper can also adjust */
+    height: auto;
+    flex-grow: 1; /* If box-container is a flex column, allow this to grow */
+  }
   .page-section-heading { font-size: 1.8em; } 
   footer { padding: 20px 10px; }
 }
@@ -2049,25 +2063,24 @@ a.contributor-link-item:focus-visible {
   .box-links {
     flex-direction: row;
     flex-wrap: wrap;
+    /* Consider adding a min-height here if items wrap and cause inconsistent total heights */
+    /* min-height: 70px; /* Example: enough for two rows of box-link items */
   }
-  /* Styles for .box-link (the div wrapper) for sizing if needed at this breakpoint */
-  .box-link, 
-  .box-links .dropdown { /* If dropdown class is on the wrapper */
-    /* Adjust min/max width for the wrapper if necessary */
-    /* min-width: 50px; */ 
-    /* max-width: 70px; */
+  .box-link { /* This is the DIV wrapper for each icon+text button/link */
+     /* min-width: 50px; */ /* Controlled by flex-basis or content now */
+     /* max-width: 70px; */ /* Controlled by flex-basis or content now */
   }
-  /* Styles for the actual button/link text and icon size */
   .action-button, 
   .action-link {
-    font-size: 0.7rem; 
-    /* padding: 3px 5px; /* Further reduce padding if needed */
+    font-size: 0.65rem; /* Further reduce font size for very small screens */
+    padding: 4px;     /* Slightly less padding inside the button/link */
+    gap: 2px;         /* Smaller gap between icon and text */
   }
   .link-icon { 
-    width: 18px;
-    height: 18px;
+    width: 16px;      /* Smaller icons */
+    height: 16px;
   }
-  .dropdown { width: auto; } /* If this refers to the .box-link.dropdown wrapper */
+  /* .dropdown { width: auto; } /* If this was for .box-link.dropdown wrapper */
   
   .sidebar:not(.collapsed) .sidebar-search-container {
     padding: 2px;
@@ -2077,22 +2090,22 @@ a.contributor-link-item:focus-visible {
     padding: 6px 8px;
   }
 
+  .carousel-slide .slide-caption {
+    padding: 3px 5px;       /* Even more reduced padding */
+    font-size: 0.7em;       /* Even smaller font */
+    line-height: 1.1;
+  }
   .carousel-dots {
-    padding-top: 3px;       /* Further reduced padding */
-    padding-bottom: 3px;
-    bottom: 2px;            /* Even closer to bottom */
+    padding-top: 2px;       /* Minimal padding */
+    padding-bottom: 2px;
+    bottom: 1px;            /* Very close to bottom */
   }
   .carousel-dot {
-    height: 8px;            /* Smaller dots */
-    width: 8px;
-    margin: 0 4px;
-  }
-  .carousel-slide .slide-caption {
-    padding: 5px 8px;       /* Further reduced padding */
-    font-size: 0.75em;      /* Smaller font */
+    height: 7px;            /* Smaller dots */
+    width: 7px;
+    margin: 0 3px;
   }
   
-  /* Ensure featured sections still have some side padding */
   .featured-categories,
   .features-section {
     padding-left: 10px;
