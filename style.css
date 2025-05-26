@@ -861,7 +861,6 @@ html.light-theme .markdown-body tr:nth-child(even) {
   flex-direction: column;
   height: auto; 
   flex-shrink: 0;
-  transition: height var(--sidebar-transition-speed) ease-in-out;
 }
 
 .main-card-top-content .box-content {
