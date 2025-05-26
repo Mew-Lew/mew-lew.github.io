@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +33,7 @@
             <li><a href="apps.html" class="nav-link"><img src="images/apps.svg" alt="Apps icon"><span>Apps</span></a></li>
             <li><a href="media.html" class="nav-link"><img src="images/media.svg" alt="Media Apps icon"><span>Media Apps</span></a></li>
             <li><a href="frontends.html" class="nav-link"><img src="images/frontends.svg" alt="Frontends icon"><span>Frontends</span></a></li>
-            <li><a href="wipapps.html" class="nav-link"><img src="images/wipapps.svg" alt="WIP Apps icon"><span>WIP Apps</span></a></li>
+            <li><a href="wipapps.html" class="nav-link active"><img src="images/wipapps.svg" alt="WIP Apps icon"><span>WIP Apps</span></a></li>
             <li><a href="utilities.html" class="nav-link"><img src="images/utilities.svg" alt="Utilities icon"><span>Utilities</span></a></li>
         </ul>
     </nav>
@@ -47,8 +45,7 @@
         </button>
     </div>
     <div class="sidebar-footer">
-        <p>© <span id="currentYear">2025</span> Emulation Revival</p>
-    </div>
+        <p>© <span id="currentYear"></span> Emulation Revival</p> </div>
 </aside>
 
 <div class="main-content-wrapper sidebar-collapsed">
@@ -56,50 +53,59 @@
         <h2 class="page-section-heading">WIP APPS</h2>
         <div class="product-wrapper">
 
-<div class="box-container" id="chonkystation3">
-    <div class="main-card-top-content">
-        <div class="box-image-wrapper">
-            <img src="images/chonkystation3.webp" alt="Chonkystation 3 Logo" class="box-image">
-        </div>
-        <div class="box-content">
-            <h3>Chonkystation 3</h3>
-            <p>A Work-In-Progress PlayStation 3 emulator.</p>
-        </div>
-        <div class="box-links">
-            <a href="#" class="box-link left" id="download-chonkystation3">
-                <img src="images/download.svg" alt="Download" class="link-icon"> Download
-            </a>
-            <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-chonkystation3">
-                <img src="images/info.svg" alt="Info" class="link-icon"> Info
-            </button>
-            <a href="https://youtu.be/_Q6EPH-SH48" class="box-link right">
-                <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-            </a>
-        </div>
-    </div>
-    <div class="info-box" id="info-chonkystation3">
-        <ul class="info-list">
-            <li>
-                <strong>Developer:</strong>
-                <a href="https://github.com/liuk7071" class="contributor-name-link" data-name="Liuk7071" data-github-url="https://github.com/liuk7071">Liuk7071</a>
-            </li>
-            <li>
-                <strong>Ported to UWP:</strong>
-                <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a>
-            </li>
-            <li><strong>Compatibility:</strong> Xbox Series S|X</li>
-            <li><strong>Requirements:</strong>
-                <ul>
-                    <li>Decrypted .elf roms</li>
-                    <li>Install all 3 dependencies</li>
-                </ul>
-            </li>
-        </ul>
-        <div class="guide-button-container">
-            <a href="{% link guides/wipapps/chonkystation3.md %}" class="guide-cta-button">Guide</a>
-        </div>
-    </div>
-</div>
+            <div class="box-container" id="chonkystation3">
+                <div class="main-card-top-content">
+                    <div class="box-image-wrapper">
+                        <img src="images/chonkystation3.webp" alt="Chonkystation 3 Logo" class="box-image">
+                    </div>
+                    <div class="box-content">
+                        <h3>Chonkystation 3</h3>
+                        <p>A Work-In-Progress PlayStation 3 emulator.</p>
+                    </div>
+                    <div class="box-links">
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-chonkystation3">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-chonkystation3">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/_Q6EPH-SH48" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="info-box" id="info-chonkystation3">
+                    <ul class="info-list">
+                        <li>
+                            <strong>Developer:</strong>
+                            <a href="https://github.com/liuk7071" class="contributor-name-link" data-name="Liuk7071" data-github-url="https://github.com/liuk7071">Liuk7071</a>
+                        </li>
+                        <li>
+                            <strong>Ported to UWP by:</strong>
+                            <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a>
+                        </li>
+                        <li><strong>Compatibility:</strong> Xbox Series S|X</li>
+                        <li><strong>Requirements:</strong>
+                            <ul>
+                                <li>Decrypted .elf roms</li>
+                                <li>Install all 3 dependencies</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="guide-button-container">
+                        <a href="{% link guides/wipapps/chonkystation3.md %}" class="guide-cta-button">Guide</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="box-container" id="hedgephysics">
                 <div class="main-card-top-content">
@@ -111,12 +117,18 @@
                         <p>A fan-made Sonic physics engine/game demo.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-hedgephysics">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-hedgephysics">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-hedgephysics">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-hedgephysics">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-hedgephysics">
@@ -143,15 +155,24 @@
                         <p>A Work-In-Progress Nintendo 3DS emulator.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-panda3ds">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-panda3ds">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/8n2m8TL3thY" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-panda3ds">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-panda3ds">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/8n2m8TL3thY" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-panda3ds">
@@ -161,7 +182,7 @@
                             <a href="https://github.com/wheremyfoodat" class="contributor-name-link" data-name="Wheremyfoodat" data-github-url="https://github.com/wheremyfoodat">Wheremyfoodat</a>
                         </li>
                         <li>
-                            <strong>Ported to UWP:</strong>
+                            <strong>Ported to UWP by:</strong>
                             <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a>
                         </li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
@@ -187,12 +208,18 @@
                         <p>A fan-made SM64HD Fan Remake (Super Mario 64) engine/game demo.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-sm64hd">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-sm64hd">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-sm64hd">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-sm64hd">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-sm64hd">
@@ -232,8 +259,7 @@
     </div>
 
     <div class="footer-meta-info">
-        <span class="copyright">© <span id="footerCurrentYear">2025</span> Emulation Revival. All rights reserved.</span>
-        <span class="credit">Website by <a href="https://github.com/Mew-Lew" target="_blank" rel="noopener noreferrer">MewLew</a></span>
+        <span class="copyright">© <span id="footerCurrentYear"></span> Emulation Revival. All rights reserved.</span> <span class="credit">Website by <a href="https://github.com/Mew-Lew" target="_blank" rel="noopener noreferrer">MewLew</a></span>
         <span class="disclaimer-link-wrapper"><a href="disclaimer.html">Disclaimer</a></span>
     </div>
 </footer>
@@ -251,8 +277,7 @@
 
 <script src="downloads.js"></script>
 <script src="searchdata.js"></script>
-<script src="main.js"></script>
-<script src="searchlogic.js"></script>
+<script src="main.js"></script> <script src="searchlogic.js"></script>
 
 </body>
 </html>

@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -65,22 +63,30 @@
                         <p>Run 16-bit or 32-bit Windows programs.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-boxedwine">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/R9nr7kDSJpo" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-boxedwine">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-boxedwine">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/R9nr7kDSJpo" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-boxedwine">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/danoon2" class="contributor-name-link" data-name="Danoon2" data-github-url="https://github.com/danoon2">Danoon2</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a>
-                        </li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X)</li>
                         <li><strong>Requirements:</strong> External Drive - Required to store your zipped programs</li>
                     </ul>
@@ -100,21 +106,30 @@
                         <p>An experimental RetroArch build with Citra, a 3DS emulator.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-citra">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/hiJwHE18L9I" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-citra">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-citra">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/hiJwHE18L9I" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-citra">
                     <ul class="info-list">
                         <li><strong>Developers:</strong> Citra Team & <a href="https://github.com/libretro" class="contributor-name-link" data-name="Libretro" data-github-url="https://github.com/libretro">Libretro</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> Do NOT update the Citra core or assets</li>
                     </ul>
@@ -131,24 +146,31 @@
                         <p>A GameCube and Wii emulator.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-dolphin">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/F1NQKHcQhbQ" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-dolphin">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-dolphin">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/F1NQKHcQhbQ" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-dolphin">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/dolphin-emu" class="contributor-name-link" data-name="Dolphin Team" data-github-url="https://github.com/dolphin-emu">Dolphin</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/SirMangler" class="contributor-name-link" data-name="Sir Mangler" data-github-url="https://github.com/SirMangler" data-kofi-url="https://ko-fi.com/sirmangler">Sir Mangler</a> 
-                        </li>
-                        <li><strong>Maintained by:</strong> <a href="https://github.com/SternXD" class="contributor-name-link" data-name="Stern" data-github-url="https://github.com/SternXD" data-kofi-url="https://ko-fi.com/stern">Stern</a>
-                        </li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/SirMangler" class="contributor-name-link" data-name="Sir Mangler" data-github-url="https://github.com/SirMangler" data-kofi-url="https://ko-fi.com/sirmangler">Sir Mangler</a></li>
+                        <li><strong>Maintained by:</strong> <a href="https://github.com/SternXD" class="contributor-name-link" data-name="Stern" data-github-url="https://github.com/SternXD" data-kofi-url="https://ko-fi.com/stern">Stern</a></li>
                         <li><strong>Compatibility:</strong> Xbox One & Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> Xbox language must be set to "English US" for controller input to work</li>
                     </ul>
@@ -168,21 +190,29 @@
                         <p>A multiplatform Sega Dreamcast, Naomi, Naomi 2 and Atomiswave emulator.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-flycast">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/nALdeQgfm_o" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-flycast">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-flycast">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/nALdeQgfm_o" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-flycast">
                     <ul class="info-list">
-                        <li><strong>Developer:</strong> <a href="https://github.com/flyinghead" class="contributor-name-link" data-name="Flyinghead" data-github-url="https://github.com/flyinghead" data-buymeacoffee-url="https://buymeacoffee.com/hhwtpernwq">Flyinghead</a>
-                        </li>
+                        <li><strong>Developer:</strong> <a href="https://github.com/flyinghead" class="contributor-name-link" data-name="Flyinghead" data-github-url="https://github.com/flyinghead" data-buymeacoffee-url="https://buymeacoffee.com/hhwtpernwq">Flyinghead</a></li>
                         <li><strong>Compatibility:</strong> Xbox One & Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> BIOS optional</li>
                     </ul>
@@ -202,21 +232,30 @@
                         <p>A source port for Doom, Heretic, Hexen, and more.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-gzdoom">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/M1LX8MifJhM" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-gzdoom">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-gzdoom">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/M1LX8MifJhM" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-gzdoom">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/ZDoom" class="contributor-name-link" data-name="ZDoom Team" data-github-url="https://github.com/ZDoom">ZDoom Team</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> IWAD files needed (doom.wad etc.)</li>
                     </ul>
@@ -236,30 +275,37 @@
                         <p>A M.U.G.E.N compatible fighting game engine.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-ikemen">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/QSz755_O6NY" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-ikemen">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-ikemen-go">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/QSz755_O6NY" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-ikemen-go">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/ikemen-engine" class="contributor-name-link" data-name="Ikemen Engine Team" data-github-url="https://github.com/ikemen-engine">Ikemen Engine Team</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/worleydl" class="contributor-name-link" data-name="Worleydl" data-github-url="https://github.com/worleydl" data-kofi-url="https://ko-fi.com/worleydl">Worleydl</a>
-                        </li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/worleydl" class="contributor-name-link" data-name="Worleydl" data-github-url="https://github.com/worleydl" data-kofi-url="https://ko-fi.com/worleydl">Worleydl</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> Game packs</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="box-container" id="openbor">
-                <div class="main-card-top-content">
+            <div class="box-container" id="openbor"> <div class="main-card-top-content">
                     <div class="box-image-wrapper">
                         <img src="images/openbor.webp" alt="OpenBOR Logo" class="box-image">
                     </div>
@@ -268,28 +314,34 @@
                         <p>A 2D side scrolling beat 'em up game engine.</p>
                     </div>
                     <div class="box-links">
-                        <div class="dropdown">
-                            <button class="box-link download-btn">
-                                <img src="images/download.svg" alt="Download" class="link-icon"><span class="download-text-content">Download<span class="arrow">▼</span></span>
+                        <div class="box-link download-item-wrapper dropdown">
+                            <button class="action-button download-action-btn" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download<span class="arrow">▼</span></span>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#" id="openbor1">OpenBOR Emulator</a></li>
                                 <li><a href="#" id="openbor2">Legacy OpenBOR Emulator</a></li>
                             </ul>
                         </div>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/V5gR-y9urgA" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-openbor">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/V5gR-y9urgA" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-openbor">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/DCurrent/openbor" class="contributor-name-link" data-name="OpenBOR Team" data-github-url="https://github.com/DCurrent/openbor">OpenBOR Team</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/worleydl" class="contributor-name-link" data-name="Worleydl" data-github-url="https://github.com/worleydl" data-kofi-url="https://ko-fi.com/worleydl">Worleydl</a>
-                        </li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/worleydl" class="contributor-name-link" data-name="Worleydl" data-github-url="https://github.com/worleydl" data-kofi-url="https://ko-fi.com/worleydl">Worleydl</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> Game paks must be on a USB drive (NTFS formatted with special permissions)</li>
                     </ul>
@@ -309,18 +361,27 @@
                         <p>A PSP emulator.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-ppsspp">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/-iK8KfewWok" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-ppsspp">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-ppsspp">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/-iK8KfewWok" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-ppsspp">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/hrydgard" class="contributor-name-link" data-name="Henrik Rydgård" data-github-url="https://github.com/hrydgard">Henrik Rydgård</a></li>
                         <li><strong>Compatibility:</strong> Xbox One & Xbox Series S|X</li>
@@ -341,21 +402,30 @@
                         <p>A source port for Duke Nukem 3D, Blood, Redneck Rampage, and more Build engine games.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-raze">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/odxBpuR9Yog" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-raze">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-raze">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/odxBpuR9Yog" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-raze">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/ZDoom" class="contributor-name-link" data-name="ZDoom Team" data-github-url="https://github.com/ZDoom">ZDoom Team</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> Game files</li>
                     </ul>
@@ -365,8 +435,7 @@
                 </div>
             </div>
             
-            <div class="box-container" id="retroarch">
-                <div class="main-card-top-content">
+            <div class="box-container" id="retroarch"> <div class="main-card-top-content">
                     <div class="box-image-wrapper">
                         <img src="images/retroarch.webp" alt="RetroArch Logo" class="box-image">
                     </div>
@@ -375,9 +444,10 @@
                         <p>A multi-system emulator for classic games and consoles.</p>
                     </div>
                     <div class="box-links">
-                        <div class="dropdown">
-                            <button class="box-link download-btn">
-                                <img src="images/download.svg" alt="Download" class="link-icon"><span class="download-text-content">Download<span class="arrow">▼</span></span>
+                        <div class="box-link download-item-wrapper dropdown">
+                            <button class="action-button download-action-btn" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download<span class="arrow">▼</span></span>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#" id="retroarch1">Xbox One - No Cores</a></li>
@@ -386,19 +456,24 @@
                                 <li><a href="#" id="retroarch4">Xbox Series - All Cores</a></li>
                             </ul>
                         </div>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/cy2oDaqIHG0" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-retroarch">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/cy2oDaqIHG0" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-retroarch">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/libretro" class="contributor-name-link" data-name="Libretro" data-github-url="https://github.com/libretro">Libretro</a></li>
-                        <li><strong>Maintained by:</strong> <a href="https://github.com/TheRhysWyrill" class="contributor-name-link" data-name="TRW" data-github-url="https://github.com/TheRhysWyrill" data-paypal-url="https://www.paypal.com/donate/?hosted_button_id=5PBT87FAGSBSE">TRW</a>
-                        </li>
+                        <li><strong>Maintained by:</strong> <a href="https://github.com/TheRhysWyrill" class="contributor-name-link" data-name="TRW" data-github-url="https://github.com/TheRhysWyrill" data-paypal-url="https://www.paypal.com/donate/?hosted_button_id=5PBT87FAGSBSE">TRW</a></li>
                         <li><strong>Compatibility:</strong> Xbox One & Xbox Series S|X</li>
                     </ul>
                     <div class="guide-button-container">
@@ -417,27 +492,31 @@
                         <p>A Flash Player emulator.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-ruffle">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-ruffle">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-ruffle">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-ruffle">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/ruffle-rs" class="contributor-name-link" data-name="Ruffle Team" data-github-url="https://github.com/ruffle-rs">Ruffle Team</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a>
-                        </li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> Games must be on a USB drive (NTFS formatted with special permissions)</li>
                     </ul>
                 </div>
             </div>
             
-            <div class="box-container" id="supermodel">
-                <div class="main-card-top-content">
+            <div class="box-container" id="supermodel"> <div class="main-card-top-content">
                     <div class="box-image-wrapper">
                         <img src="images/supermodel.webp" alt="Sega Model 3 Logo" class="box-image">
                     </div>
@@ -446,27 +525,34 @@
                         <p>A Sega Model 3 arcade emulator based on Supermodel.</p>
                     </div>
                     <div class="box-links">
-                        <div class="dropdown">
-                            <button class="box-link download-btn">
-                                <img src="images/download.svg" alt="Download" class="link-icon"><span class="download-text-content">Download<span class="arrow">▼</span></span>
+                        <div class="box-link download-item-wrapper dropdown">
+                            <button class="action-button download-action-btn" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download<span class="arrow">▼</span></span>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#" id="supermodel1">Sega Model 3 Emulator</a></li>
                                 <li><a href="#" id="supermodel2">Dependency File</a></li>
                             </ul>
                         </div>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/VOJ1IKj0API" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-supermodel">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/VOJ1IKj0API" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-supermodel">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/trzy/Supermodel" class="contributor-name-link" data-name="Supermodel Team" data-github-url="https://github.com/trzy/Supermodel">Supermodel Team</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
                         <li><strong>Maintained by:</strong> <a href="https://github.com/poopbird4k" class="contributor-name-link" data-name="Poopbird4k" data-github-url="https://github.com/poopbird4k">Poopbird4k</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> Dependency file</li>
@@ -477,8 +563,7 @@
                 </div>
             </div>
             
-            <div class="box-container" id="supermodel-g920">
-                <div class="main-card-top-content">
+            <div class="box-container" id="supermodel-g920"> <div class="main-card-top-content">
                     <div class="box-image-wrapper">
                         <img src="images/supermodel_g920.webp" alt="Sega Model 3 Logo G920" class="box-image">
                     </div>
@@ -487,27 +572,34 @@
                         <p>A Sega Model 3 arcade emulator based on Supermodel, enhanced with Logitech G920 support.</p>
                     </div>
                     <div class="box-links">
-                        <div class="dropdown">
-                            <button class="box-link download-btn">
-                                <img src="images/download.svg" alt="Download" class="link-icon"><span class="download-text-content">Download<span class="arrow">▼</span></span>
+                        <div class="box-link download-item-wrapper dropdown">
+                            <button class="action-button download-action-btn" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download<span class="arrow">▼</span></span>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#" id="superg1">Sega Model 3 G920 Emulator</a></li>
                                 <li><a href="#" id="superg2">Dependency File</a></li>
                             </ul>
                         </div>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/8fKWM-4Q46k" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-supermodel-g920">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/8fKWM-4Q46k" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-supermodel-g920">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/trzy/Supermodel" class="contributor-name-link" data-name="Supermodel Team" data-github-url="https://github.com/trzy/Supermodel">Supermodel Team</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/aerisarn" class="contributor-name-link" data-name="Aerisarn" data-github-url="https://github.com/aerisarn">Aerisarn</a></li>
                         <li><strong>Maintained by:</strong> <a href="https://github.com/poopbird4k" class="contributor-name-link" data-name="Poopbird4k" data-github-url="https://github.com/poopbird4k">Poopbird4k</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> 
@@ -533,24 +625,31 @@
                         <p>A Playstation 2 emulator ported from PCSX2.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-xbsx2">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/hyX-qd84E_w" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-xbsx2">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-xbsx2">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/hyX-qd84E_w" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-xbsx2">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/PCSX2" class="contributor-name-link" data-name="PCSX2 Team" data-github-url="https://github.com/PCSX2">PCSX2</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/SirMangler" class="contributor-name-link" data-name="Sir Mangler" data-github-url="https://github.com/SirMangler" data-kofi-url="https://ko-fi.com/sirmangler">Sir Mangler</a>
-                        </li>
-                        <li><strong>Maintained by:</strong> <a href="https://github.com/SternXD" class="contributor-name-link" data-name="Stern" data-github-url="https://github.com/SternXD" data-kofi-url="https://ko-fi.com/stern">Stern</a>
-                        </li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/SirMangler" class="contributor-name-link" data-name="Sir Mangler" data-github-url="https://github.com/SirMangler" data-kofi-url="https://ko-fi.com/sirmangler">Sir Mangler</a></li>
+                        <li><strong>Maintained by:</strong> <a href="https://github.com/SternXD" class="contributor-name-link" data-name="Stern" data-github-url="https://github.com/SternXD" data-kofi-url="https://ko-fi.com/stern">Stern</a></li>
                         <li><strong>Compatibility:</strong> Xbox One & Xbox Series S|X</li>
                         <li><strong>Requirements:</strong> PS2 BIOS needed</li>
                     </ul>
@@ -570,22 +669,30 @@
                         <p>An Xbox 360 emulator.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-xenia">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/rXAWYeJ0yRw" class="box-link right">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-xenia">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-xenia">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/rXAWYeJ0yRw" class="action-link tutorial-action-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
-                <div class="info-box">
+                <div class="info-box" id="info-xenia">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <a href="https://github.com/xenia-project" class="contributor-name-link" data-name="Xenia Project" data-github-url="https://github.com/xenia-project">Xenia Project</a></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/SirMangler" class="contributor-name-link" data-name="Sir Mangler" data-github-url="https://github.com/SirMangler" data-kofi-url="https://ko-fi.com/sirmangler">Sir Mangler</a>
-                        </li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/SirMangler" class="contributor-name-link" data-name="Sir Mangler" data-github-url="https://github.com/SirMangler" data-kofi-url="https://ko-fi.com/sirmangler">Sir Mangler</a></li>
                         <li><strong>Compatibility:</strong> Xbox Series S|X</li>
                     </ul>
                 </div>
@@ -613,8 +720,7 @@
             </div>
         </div>
         <div class="footer-meta-info">
-            <span class="copyright">© <span id="footerCurrentYear"></span> Emulation Revival. All rights reserved.</span>
-            <span class="credit">Website by <a href="https://github.com/Mew-Lew" target="_blank" rel="noopener noreferrer">MewLew</a></span>
+            <span class="copyright">© <span id="footerCurrentYear"></span> Emulation Revival. All rights reserved.</span> <span class="credit">Website by <a href="https://github.com/Mew-Lew" target="_blank" rel="noopener noreferrer">MewLew</a></span>
             <span class="disclaimer-link-wrapper"><a href="disclaimer.html">Disclaimer</a></span>
         </div>
     </footer>

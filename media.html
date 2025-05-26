@@ -1,11 +1,9 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Media Apps for Xbox Dev Mode (Kodi, VLC, etc.) | Emulation Revival</title>
+    <title>Media Apps for Xbox Developer Mode (Kodi, VLC, etc.) | Emulation Revival</title>
     <meta name="description" content="Explore media apps like Kodi, VLC, YouTube, SoundCloud, and TuneIn for your Xbox in Developer Mode with Emulation Revival.">
     <link rel="stylesheet" href="style.css">
     <script src="theme.js"></script>
@@ -66,12 +64,18 @@
                         <p>Open-source home theater software.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-kodi">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-kodi">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-kodi">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-kodi">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-kodi">
@@ -93,12 +97,18 @@
                         <p>Online audio distribution and music sharing platform.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-soundcloud">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-soundcloud">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-soundcloud">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-soundcloud">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-soundcloud">
@@ -120,12 +130,18 @@
                         <p>Live radio, sports, music, news, and podcasts.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-tunein">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-tunein">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-tunein">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-tunein">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-tunein">
@@ -146,12 +162,18 @@
                         <p>Live streaming platform for gamers and content creators.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-twitch">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-twitch">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-twitch">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-twitch">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-twitch">
@@ -172,12 +194,18 @@
                         <p>Free and open-source cross-platform multimedia player.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-vlc">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-vlc">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-vlc">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-vlc">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-vlc">
@@ -199,18 +227,24 @@
                         <p>Online video sharing platform.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-youtube">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-youtube">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-youtube">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-youtube">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-youtube">
                     <ul class="info-list">
                         <li><strong>Developer:</strong> <span class="contributor-name-link" data-name="Google">Google</span></li>
-                        <li><strong>Ported to UWP:</strong> <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a></li>
+                        <li><strong>Ported to UWP by:</strong> <a href="https://github.com/momo-AUX1" class="contributor-name-link" data-name="Moonpower" data-github-url="https://github.com/momo-AUX1" data-kofi-url="https://ko-fi.com/moonpower007">Moonpower</a></li>
                         <li><strong>Compatibility:</strong> Xbox One & Xbox Series S|X</li>
                         <li><strong>Features:</strong> No ads</li>
                     </ul>
@@ -227,15 +261,24 @@
                         <p>Media player with Zune-inspired interface.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-zune">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-zune">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/NE6GL6-YDu0" class="box-link right tutorial-link">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-zune">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-zune">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/NE6GL6-YDu0" class="action-link tutorial-action-link tutorial-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-zune">

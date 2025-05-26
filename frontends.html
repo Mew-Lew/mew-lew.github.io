@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -66,21 +64,28 @@
                         <p>LaunchPass is a frontend that is capable of launching ROMs in most emulators on Xbox consoles.</p>
                     </div>
                     <div class="box-links">
-                        <div class="dropdown">
-                            <button class="box-link download-btn">
-                                <img src="images/download.svg" alt="Download" class="link-icon"><span class="download-text-content">Download<span class="arrow">▼</span></span>
+                        <div class="box-link download-item-wrapper dropdown">
+                            <button class="action-button download-action-btn" aria-haspopup="true" aria-expanded="false">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download<span class="arrow">▼</span></span>
                             </button>
                             <ul class="dropdown-menu">
                                 <li><a href="#" id="launchpass1">LaunchPass</a></li>
                                 <li><a href="#" id="launchpass2">Dependencies</a></li>
                             </ul>
                         </div>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-launchpass">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/1Qo2tqwA5qI" class="box-link right tutorial-link">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-launchpass">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/1Qo2tqwA5qI" class="action-link tutorial-action-link tutorial-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-launchpass">
@@ -115,15 +120,24 @@
                         <p>Retro Pass is a simple frontend for emulators running on Xbox.</p>
                     </div>
                     <div class="box-links">
-                        <a href="#" class="box-link left" id="download-retropass">
-                            <img src="images/download.svg" alt="Download" class="link-icon"> Download
-                        </a>
-                        <button class="box-link center info-toggle" aria-expanded="false" aria-controls="info-retropass">
-                            <img src="images/info.svg" alt="Info" class="link-icon"> Info
-                        </button>
-                        <a href="https://youtu.be/eaStAmBhnaE" class="box-link right tutorial-link">
-                            <img src="images/youtube.svg" alt="Tutorial" class="link-icon"> Tutorial
-                        </a>
+                        <div class="box-link download-item-wrapper">
+                            <a href="#" class="action-link download-action-link" id="download-retropass">
+                                <img src="images/download.svg" alt="Download" class="link-icon">
+                                <span class="button-text-span">Download</span>
+                            </a>
+                        </div>
+                        <div class="box-link info-item-wrapper">
+                            <button class="action-button info-action-btn info-toggle" aria-expanded="false" aria-controls="info-retropass">
+                                <img src="images/info.svg" alt="Info" class="link-icon">
+                                <span class="button-text-span">Info</span>
+                            </button>
+                        </div>
+                        <div class="box-link tutorial-item-wrapper">
+                            <a href="https://youtu.be/eaStAmBhnaE" class="action-link tutorial-action-link tutorial-link">
+                                <img src="images/youtube.svg" alt="Tutorial" class="link-icon">
+                                <span class="button-text-span">Tutorial</span>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="info-box" id="info-retropass">
