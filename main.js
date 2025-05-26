@@ -63,7 +63,7 @@ function toggleMenu() {
             if (typeof equalizeInitialCardHeights === 'function') {
                 equalizeInitialCardHeights();
             }
-        }, 300); 
+        }, 350); 
     }
 }
 
