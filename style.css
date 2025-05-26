@@ -1901,14 +1901,13 @@ a.contributor-link-item:focus-visible {
   outline: none !important;
 }
 
-
 @media (max-width: 1024px) {
   .product-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     padding: 15px;
     gap: 15px;
   }
-  :root {
+  :root { 
     --sidebar-width: 220px;
   }
   .hero-title { font-size: 2.4em; }
@@ -1960,8 +1959,8 @@ a.contributor-link-item:focus-visible {
   .featured-categories,
   .getting-started-section,
   .features-section { 
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px; 
+    padding-bottom: 30px; /
     padding-left: 0;
     padding-right: 0;
     margin-top: 30px;
@@ -1982,6 +1981,22 @@ a.contributor-link-item:focus-visible {
   }
   .carousel-button.prev { left: 10px; } 
   .carousel-button.next { right: 10px; } 
+
+  .carousel-dots {
+    padding-top: 10px; 
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    z-index: 10;
+   
+  }
+  .carousel-slide .slide-caption {
+    padding: 8px 10px; 
+    font-size: 0.9em;  
+
+  }
+
   .category-grid {
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px; 
@@ -2035,22 +2050,33 @@ a.contributor-link-item:focus-visible {
     flex-direction: row;
     flex-wrap: wrap;
   }
-  .box-link,
-  .box-links .dropdown {
-    font-size: 0.75rem;
-    min-width: 50px;
-    max-width: 70px; 
+  .box-link, 
+  .box-links .dropdown { 
+
   }
-  .link-icon {
-    width: 20px;
-    height: 20px;
+  .action-button, 
+  .action-link {
+    font-size: 0.7rem; 
   }
-  .dropdown { width: auto; }
+  .link-icon { 
+    width: 18px;
+    height: 18px;
+  }
+  .dropdown { width: auto; } 
+  
   .sidebar:not(.collapsed) .sidebar-search-container {
     padding: 2px;
   }
   .sidebar:not(.collapsed) .sidebar-search-input-field {
     font-size: 0.8em;
     padding: 6px 8px;
+  }
+
+  .carousel-dots {
+    padding-top: 8px; 
+  }
+  .carousel-slide .slide-caption {
+    padding: 5px 8px;
+    font-size: 0.8em;
   }
 }
