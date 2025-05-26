@@ -58,6 +58,12 @@ function toggleMenu() {
         mainContentWrapper.classList.toggle("sidebar-collapsed");
         const isCollapsed = sidebar.classList.contains("collapsed");
         menuToggleButton.setAttribute("aria-expanded", String(!isCollapsed)); 
+        
+        setTimeout(() => {
+    if (typeof equalizeInitialCardHeights === 'function') {
+        equalizeInitialCardHeights();
+    }
+}, 300);
 
     }
 }
